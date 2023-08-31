@@ -23,6 +23,12 @@ namespace BancoApp1_3.Presentacion
         private void NuevoCliente_Load(object sender, EventArgs e)
         {
             CargarTipoCuenta();
+            ProximoCliente();
+        }
+
+        private void ProximoCliente()
+        {
+            lblProximoCliente.Text = lblProximoCliente.Text + " " + conexionDB.ProximoCliente();
         }
 
         private void CargarTipoCuenta()

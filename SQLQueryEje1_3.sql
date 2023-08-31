@@ -46,6 +46,9 @@ INSERT INTO TipoCuenta(cod_TipoCuenta,nombre)
 INSERT INTO TipoCuenta(cod_TipoCuenta,nombre)
 		         VALUES(5,'Cuenta Remunerada')
 
+/********* Insert Primer Cliente ***************************/
+INSERT INTO Cliente(nombre,apellido,dni)
+	   VALUES('Nicolas','Herrera',99999999)
 
 /************* SP del Proyecto Banco *********************/
 /*CREATE PROC PROXIMO_ID

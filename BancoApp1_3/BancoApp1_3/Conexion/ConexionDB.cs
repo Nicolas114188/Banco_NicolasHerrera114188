@@ -29,5 +29,21 @@ namespace BancoApp1_3.Conexion
             cnn.Close();
             return consulta;
         }
+        public string ProximoCliente()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cnn.Open();
+            cmd.Connection = cnn;
+            cmd.CommandType= CommandType.StoredProcedure;
+            cmd.CommandText = "PROXIMO_ID";
+            SqlParameter param = new SqlParameter();
+            param.ParameterName = "@next";
+            param.SqlDbType = SqlDbType.Int;
+            param.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(param);
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+            return param.Value.ToString();
+        }
     }
 }
