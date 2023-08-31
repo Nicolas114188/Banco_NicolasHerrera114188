@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TUP\\TUP de programacion II\\TP programacionII_2023\\Banco_NicolasHerrera114188\\BancoApp1_3\\BancoApp1_3\\BancoApp1_3.csproj": {}
+    "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\Banco_NicolasHerrera114188\\BancoApp1_3\\BancoApp1_3\\BancoApp1_3.csproj": {}
   },
   "projects": {
-    "D:\\TUP\\TUP de programacion II\\TP programacionII_2023\\Banco_NicolasHerrera114188\\BancoApp1_3\\BancoApp1_3\\BancoApp1_3.csproj": {
+    "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\Banco_NicolasHerrera114188\\BancoApp1_3\\BancoApp1_3\\BancoApp1_3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TUP\\TUP de programacion II\\TP programacionII_2023\\Banco_NicolasHerrera114188\\BancoApp1_3\\BancoApp1_3\\BancoApp1_3.csproj",
+        "projectUniqueName": "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\Banco_NicolasHerrera114188\\BancoApp1_3\\BancoApp1_3\\BancoApp1_3.csproj",
         "projectName": "BancoApp1_3",
-        "projectPath": "D:\\TUP\\TUP de programacion II\\TP programacionII_2023\\Banco_NicolasHerrera114188\\BancoApp1_3\\BancoApp1_3\\BancoApp1_3.csproj",
+        "projectPath": "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\Banco_NicolasHerrera114188\\BancoApp1_3\\BancoApp1_3\\BancoApp1_3.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\TUP\\TUP de programacion II\\TP programacionII_2023\\Banco_NicolasHerrera114188\\BancoApp1_3\\BancoApp1_3\\obj\\",
+        "outputPath": "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\Banco_NicolasHerrera114188\\BancoApp1_3\\BancoApp1_3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

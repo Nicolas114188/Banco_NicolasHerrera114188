@@ -15,7 +15,7 @@ namespace BancoApp1_3.Conexion
         public ConexionDB()
         {
             cadenaConexion = @"Data Source=DESKTOP-B2KQT83\SQLEXPRESS;Initial Catalog=BANCO_114188;Integrated Security=True";
-            cnn = new SqlConnection();
+            cnn = new SqlConnection(cadenaConexion);
         }
         public DataTable ConsultaSQL()
         {

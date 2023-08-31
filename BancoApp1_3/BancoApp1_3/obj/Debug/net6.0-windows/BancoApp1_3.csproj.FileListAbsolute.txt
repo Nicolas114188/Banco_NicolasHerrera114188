@@ -23,3 +23,28 @@ D:\TUP\TUP de programacion II\TP programacionII_2023\Banco_NicolasHerrera114188\
 D:\TUP\TUP de programacion II\TP programacionII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\TUP\TUP de programacion II\TP programacionII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\TUP\TUP de programacion II\TP programacionII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.csproj.CopyComplete
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\BancoApp1_3.exe
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\BancoApp1_3.deps.json
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\BancoApp1_3.runtimeconfig.json
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\BancoApp1_3.dll
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\BancoApp1_3.pdb
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.csproj.AssemblyReference.cache
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.BancoApp.resources
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.Presentacion.NuevoCliente.resources
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.csproj.GenerateResource.cache
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.GeneratedMSBuildEditorConfig.editorconfig
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.AssemblyInfoInputs.cache
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.AssemblyInfo.cs
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.csproj.CoreCompileInputs.cache
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.csproj.CopyComplete
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.dll
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\refint\BancoApp1_3.dll
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.pdb
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.genruntimeconfig.cache
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\ref\BancoApp1_3.dll
