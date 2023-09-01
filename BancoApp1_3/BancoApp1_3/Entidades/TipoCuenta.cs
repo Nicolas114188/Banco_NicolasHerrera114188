@@ -8,6 +8,7 @@ namespace BancoApp1_3.Entidades
 {
     class TipoCuenta
     {
+        public int Id { get; set; }
         public string Nombre { get; set; }
         public TipoCuenta()
         {
