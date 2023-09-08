@@ -50,11 +50,14 @@ namespace BancoApp1_3.Conexion
         public bool ConfirmarCliente(Cliente oCliente)
         {
             bool result=true;
+            SqlTransaction t=null;
             try
             {
                 SqlCommand cmd = new SqlCommand();
                 cnn.Open();
+                t = cnn.BeginTransaction();
                 cmd.Connection = cnn;
+                cmd.Transaction = t;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "INSERTAR_MAESTRO";
                 cmd.Parameters.AddWithValue("@nombre", oCliente.Nombre);
@@ -74,7 +77,7 @@ namespace BancoApp1_3.Conexion
                 SqlCommand cmdDetalle;
                 foreach (Cuenta cuenta in oCliente.Cuentas)
                 {
-                    cmdDetalle = new SqlCommand("SP_INSERTAR_DETALLES", cnn);
+                    cmdDetalle = new SqlCommand("SP_INSERTAR_DETALLES", cnn,t);
                     cmdDetalle.CommandType = CommandType.StoredProcedure;
                     cmdDetalle.Parameters.AddWithValue("@cod_Cuenta", cuentaNro);
                     cmdDetalle.Parameters.AddWithValue("@cod_Cliente", proximoNro);
@@ -85,10 +88,15 @@ namespace BancoApp1_3.Conexion
                     cmdDetalle.ExecuteNonQuery();
                     cuentaNro++;
                 }
+                t.Commit();
             }
             catch
             {
-                result = false;
+                if (t != null)
+                {
+                    t.Rollback();
+                    result = false;
+                }
             }
             finally
             {
