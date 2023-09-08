@@ -8,10 +8,13 @@ namespace BancoApp1_3.Entidades
 {
     class Cliente
     {
+        public DateTime FechaAlta { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public int DNI { get; set; }
         public List<Cuenta> Cuentas { get; set; }
+
+        public DateTime FechaBaja { get; set; }
         public Cliente()
         {
             Nombre = string.Empty;
