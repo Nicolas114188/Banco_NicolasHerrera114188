@@ -7,16 +7,18 @@ USE BANCO_114188
 GO
 
 CREATE TABLE TipoCuenta(
-	cod_TipoCuenta int,
-	nombre varchar(50),
+	cod_TipoCuenta int NOT NULL,
+	nombre varchar(50) NOT NULL,
 	CONSTRAINT PK_TipoCuenta PRIMARY KEY (cod_TipoCuenta)
 )
 
 CREATE TABLE Cliente(
 	cod_Cliente int identity(1,1),
-	nombre varchar(60),
-	apellido varchar(60),
-	dni int,
+	fecha_alta datetime NOT NULL,
+	nombre varchar(60) NOT NULL,
+	apellido varchar(60) NOT NULL,
+	dni int NOT NULL,
+	fecha_baja datetime NULL,
 	CONSTRAINT PK_Cliente PRIMARY KEY (cod_Cliente)
 )
 
@@ -24,7 +26,7 @@ CREATE TABLE Cuenta(
 	cod_Cuenta int,
 	cod_Cliente int,
 	cod_TipoCuenta int,
-	CBU int,
+	CBU int NOT NULL,
 	saldo money,
 	ultimoMovimiento varchar(200),
 	CONSTRAINT PK_Cuenta PRIMARY KEY(cod_Cuenta),
@@ -47,8 +49,8 @@ INSERT INTO TipoCuenta(cod_TipoCuenta,nombre)
 		         VALUES(5,'Cuenta Remunerada')
 
 /********* Insert Primer Cliente ***************************/
-INSERT INTO Cliente(nombre,apellido,dni)
-	   VALUES('Nicolas','Herrera',99999999)
+INSERT INTO Cliente(fecha_alta,nombre,apellido,dni)
+	   VALUES('01/08/2022','Nicolas','Herrera',99999999)
 
 /************* SP del Proyecto Banco *********************/
 /*CREATE PROC PROXIMO_ID
@@ -60,13 +62,14 @@ END
 
 CREATE PROC INSERTAR_MAESTRO
 @nombre varchar(60),
+@fecha_alta date,
 @apellido varchar(60),
 @dni int,
 @cod_Cliente int OUTPUT
 AS
 BEGIN
-	INSERT INTO Cliente(nombre,apellido,dni)
-			VALUES(@nombre,@apellido,@dni);
+	INSERT INTO Cliente(fecha_alta,nombre,apellido,dni)
+			VALUES(@fecha_alta,@nombre,@apellido,@dni);
 	--Asignamos el valor del último ID autogenerado (obtenido --  
     --mediante la función SCOPE_IDENTITY() de SQLServer)	
 	SET @cod_Cliente= SCOPE_IDENTITY();
