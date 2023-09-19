@@ -24,8 +24,14 @@ namespace BancoApp1_3
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            NuevoCliente nuevo=new NuevoCliente();
+            NuevoCliente nuevo = new NuevoCliente();
             nuevo.ShowDialog();
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaCliente consulta = new ConsultaCliente();
+            consulta.ShowDialog();
         }
     }
 }

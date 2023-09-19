@@ -48,3 +48,4 @@ D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\Banc
 D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.pdb
 D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.genruntimeconfig.cache
 D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\ref\BancoApp1_3.dll
+D:\TUP\TUP de programacion II\Tup_ProgramII_2023\Banco_NicolasHerrera114188\BancoApp1_3\BancoApp1_3\obj\Debug\net6.0-windows\BancoApp1_3.Presentacion.ConsultaCliente.resources

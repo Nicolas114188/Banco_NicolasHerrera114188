@@ -57,7 +57,7 @@
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(180, 22);
+            salirToolStripMenuItem.Size = new Size(96, 22);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
@@ -79,6 +79,7 @@
             consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
             consultarToolStripMenuItem.Size = new Size(180, 22);
             consultarToolStripMenuItem.Text = "Consultar";
+            consultarToolStripMenuItem.Click += consultarToolStripMenuItem_Click;
             // 
             // nuevoToolStripMenuItem
             // 

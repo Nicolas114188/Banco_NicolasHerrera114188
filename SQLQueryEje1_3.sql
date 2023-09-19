@@ -89,4 +89,25 @@ CREATE PROCEDURE [SP_INSERTAR_DETALLES]
 AS
 INSERT INTO Cuenta(cod_Cuenta,cod_Cliente,cod_TipoCuenta,CBU,saldo,ultimoMovimiento)
 		VALUES(@cod_Cuenta,@cod_Cliente,@cod_TipoCuenta,@CBU,@saldo,@ultimoMovimiento);
-	*/	
+		
+CREATE PROC SP_ELIMINAR_CLIENTE
+@cod_Cliente int OUTPUT
+AS
+BEGIN
+	UPDATE Cliente SET fecha_baja=GETDATE()
+	WHERE cod_Cliente=@cod_Cliente
+END
+CREATE PROC CONSULTAR_CLIENTE
+@nombre varchar(60),
+@apellido varchar(60),
+@fecha_Desde date,
+@fecha_Hasta date
+AS
+BEGIN
+	SELECT * 
+	FROM Cliente
+	WHERE fecha_alta >=@fecha_Desde
+	AND fecha_alta<=@fecha_Hasta
+	AND (nombre like'%'+@nombre+'%' OR apellido like'%'+@apellido+'%')
+END
+*/
