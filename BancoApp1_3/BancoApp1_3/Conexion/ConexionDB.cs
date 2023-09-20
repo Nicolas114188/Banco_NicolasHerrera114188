@@ -125,5 +125,41 @@ namespace BancoApp1_3.Conexion
             cnn.Close() ;
             return tabla;
         }
+
+        internal bool EjecutarSql(string strSql, List<Parametro> value)
+        {
+            bool result = true;
+            SqlTransaction t= null;
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cnn.Open();
+                t= cnn.BeginTransaction();
+                cmd.Connection = cnn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = strSql;
+                cmd.Transaction = t;
+                foreach (Parametro param in value) 
+                {
+                    cmd.Parameters.AddWithValue(param.Nombre, param.Valor);
+                }
+                cmd.ExecuteNonQuery();
+                t.Commit();         
+            }
+            catch (SqlException)
+            {
+                if(t != null) 
+                { 
+                    t.Rollback(); 
+                    result = false; 
+                }
+            }
+            finally
+            {
+                if(cnn!= null && cnn.State==ConnectionState.Open)
+                    cnn.Close();
+            }
+            return result;
+        }
     }
 }

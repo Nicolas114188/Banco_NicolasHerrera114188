@@ -78,11 +78,40 @@ namespace BancoApp1_3.Presentacion
 
         private void dgvCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvCliente.CurrentCell.ColumnIndex == 6) 
+            if (dgvCliente.CurrentCell.ColumnIndex == 6)
             {
                 int numero = int.Parse(dgvCliente.CurrentRow.Cells["ColCod_Cliente"].Value.ToString());
                 new FrmDetalleCuenta(numero).ShowDialog();
             }
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Seguro que desea quitar este cliente?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (dgvCliente.CurrentRow != null)
+                {
+                    int nro = int.Parse(dgvCliente.CurrentRow.Cells["ColCod_Cliente"].Value.ToString());
+                    List<Parametro> lista = new List<Parametro>();
+                    lista.Add(new Parametro("@cod_Cliente", nro));
+                    bool val = new ConexionDB().EjecutarSql("SP_ELIMINAR_CLIENTE", lista);
+                    if (val)
+                    {
+                        MessageBox.Show("El cliente se quitó exitosamente!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.btnConsultar_Click(sender, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show("El Cliente NO se quitó exitosamente!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            int nro = int.Parse(dgvCliente.CurrentRow.Cells["ColCod_Cliente"].Value.ToString());
+
         }
     }
 }

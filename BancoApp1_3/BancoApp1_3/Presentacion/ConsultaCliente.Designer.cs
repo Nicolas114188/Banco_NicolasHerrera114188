@@ -154,6 +154,7 @@
             btnModificar.TabIndex = 6;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click;
             // 
             // btnBorrar
             // 
@@ -163,6 +164,7 @@
             btnBorrar.TabIndex = 7;
             btnBorrar.Text = "Borrar";
             btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
             // 
             // btnSalir
             // 
