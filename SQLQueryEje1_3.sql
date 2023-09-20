@@ -110,4 +110,13 @@ BEGIN
 	AND fecha_alta<=@fecha_Hasta
 	AND (nombre like'%'+@nombre+'%' OR apellido like'%'+@apellido+'%')
 END
-*/
+CREATE PROC CONSULTAR_CUENTA
+@cod_Cliente int
+AS
+BEGIN
+SELECT cu.CBU,cu.ultimoMovimiento,cu.saldo,tp.nombre 'TipoCuenta'
+FROM Cuenta cu, Cliente cli, TipoCuenta tp
+WHERE cu.cod_TipoCuenta=tp.cod_TipoCuenta
+AND cu.cod_Cliente=cli.cod_Cliente
+AND cu.cod_Cliente=@cod_Cliente
+END*/

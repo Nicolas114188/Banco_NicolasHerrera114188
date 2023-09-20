@@ -108,5 +108,22 @@ namespace BancoApp1_3.Conexion
             
             return result;
         }
+
+        public DataTable ConsultaSQL(string nombreSP, List<Parametro> lstParametro)
+        {
+            DataTable tabla = new DataTable();
+            SqlCommand cmd = new SqlCommand();
+            cnn.Open();
+            cmd.Connection = cnn;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = nombreSP;
+            foreach (Parametro param in lstParametro) 
+            {
+                cmd.Parameters.AddWithValue(param.Nombre,param.Valor);
+            }
+            tabla.Load(cmd.ExecuteReader());
+            cnn.Close() ;
+            return tabla;
+        }
     }
 }

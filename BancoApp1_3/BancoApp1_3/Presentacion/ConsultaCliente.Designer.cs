@@ -33,6 +33,12 @@
             label2 = new Label();
             dtpFecHasta = new DateTimePicker();
             dgvCliente = new DataGridView();
+            ColCod_Cliente = new DataGridViewTextBoxColumn();
+            CoFecha = new DataGridViewTextBoxColumn();
+            CoNombre = new DataGridViewTextBoxColumn();
+            CoApellido = new DataGridViewTextBoxColumn();
+            CoDNI = new DataGridViewTextBoxColumn();
+            CoAcciones = new DataGridViewButtonColumn();
             btnConsultar = new Button();
             btnModificar = new Button();
             btnBorrar = new Button();
@@ -41,11 +47,6 @@
             textNombre = new TextBox();
             label4 = new Label();
             textApellido = new TextBox();
-            CoFecha = new DataGridViewTextBoxColumn();
-            CoNombre = new DataGridViewTextBoxColumn();
-            CoApellido = new DataGridViewTextBoxColumn();
-            CoDNI = new DataGridViewTextBoxColumn();
-            CoAcciones = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvCliente).BeginInit();
             SuspendLayout();
             // 
@@ -86,13 +87,54 @@
             dgvCliente.AllowUserToAddRows = false;
             dgvCliente.AllowUserToDeleteRows = false;
             dgvCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCliente.Columns.AddRange(new DataGridViewColumn[] { CoFecha, CoNombre, CoApellido, CoDNI, CoAcciones });
+            dgvCliente.Columns.AddRange(new DataGridViewColumn[] { ColCod_Cliente, CoFecha, CoNombre, CoApellido, CoDNI, CoAcciones });
             dgvCliente.Location = new Point(26, 206);
             dgvCliente.Name = "dgvCliente";
             dgvCliente.ReadOnly = true;
             dgvCliente.RowTemplate.Height = 25;
             dgvCliente.Size = new Size(543, 150);
             dgvCliente.TabIndex = 4;
+            dgvCliente.CellContentClick += dgvCliente_CellContentClick;
+            // 
+            // ColCod_Cliente
+            // 
+            ColCod_Cliente.HeaderText = "Cod_Cliente";
+            ColCod_Cliente.Name = "ColCod_Cliente";
+            ColCod_Cliente.ReadOnly = true;
+            ColCod_Cliente.Visible = false;
+            // 
+            // CoFecha
+            // 
+            CoFecha.HeaderText = "Fecha";
+            CoFecha.Name = "CoFecha";
+            CoFecha.ReadOnly = true;
+            // 
+            // CoNombre
+            // 
+            CoNombre.HeaderText = "Nombre";
+            CoNombre.Name = "CoNombre";
+            CoNombre.ReadOnly = true;
+            // 
+            // CoApellido
+            // 
+            CoApellido.HeaderText = "Apellido";
+            CoApellido.Name = "CoApellido";
+            CoApellido.ReadOnly = true;
+            // 
+            // CoDNI
+            // 
+            CoDNI.HeaderText = "DNI";
+            CoDNI.Name = "CoDNI";
+            CoDNI.ReadOnly = true;
+            // 
+            // CoAcciones
+            // 
+            CoAcciones.HeaderText = "Acciones";
+            CoAcciones.Name = "CoAcciones";
+            CoAcciones.ReadOnly = true;
+            CoAcciones.Resizable = DataGridViewTriState.True;
+            CoAcciones.SortMode = DataGridViewColumnSortMode.Automatic;
+            CoAcciones.Text = "Ver Cuenta";
             // 
             // btnConsultar
             // 
@@ -164,36 +206,6 @@
             textApellido.Size = new Size(157, 23);
             textApellido.TabIndex = 12;
             // 
-            // CoFecha
-            // 
-            CoFecha.HeaderText = "Fecha";
-            CoFecha.Name = "CoFecha";
-            CoFecha.ReadOnly = true;
-            // 
-            // CoNombre
-            // 
-            CoNombre.HeaderText = "Nombre";
-            CoNombre.Name = "CoNombre";
-            CoNombre.ReadOnly = true;
-            // 
-            // CoApellido
-            // 
-            CoApellido.HeaderText = "Apellido";
-            CoApellido.Name = "CoApellido";
-            CoApellido.ReadOnly = true;
-            // 
-            // CoDNI
-            // 
-            CoDNI.HeaderText = "DNI";
-            CoDNI.Name = "CoDNI";
-            CoDNI.ReadOnly = true;
-            // 
-            // CoAcciones
-            // 
-            CoAcciones.HeaderText = "Acciones";
-            CoAcciones.Name = "CoAcciones";
-            CoAcciones.ReadOnly = true;
-            // 
             // ConsultaCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -235,10 +247,11 @@
         private TextBox textNombre;
         private Label label4;
         private TextBox textApellido;
+        private DataGridViewTextBoxColumn ColCod_Cliente;
         private DataGridViewTextBoxColumn CoFecha;
         private DataGridViewTextBoxColumn CoNombre;
         private DataGridViewTextBoxColumn CoApellido;
         private DataGridViewTextBoxColumn CoDNI;
-        private DataGridViewTextBoxColumn CoAcciones;
+        private DataGridViewButtonColumn CoAcciones;
     }
 }
