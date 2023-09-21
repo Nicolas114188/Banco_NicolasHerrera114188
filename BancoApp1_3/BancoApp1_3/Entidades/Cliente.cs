@@ -8,6 +8,7 @@ namespace BancoApp1_3.Entidades
 {
     class Cliente
     {
+        public int NroCliente { get; set; }
         public DateTime FechaAlta { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
