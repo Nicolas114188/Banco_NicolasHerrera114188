@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\TP_PII_Cine\\Programacion2\\Cine\\CineBack\\CineBack.csproj": {}
+    "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\Banco_NicolasHerrera114188\\Cine\\CineBack\\CineBack.csproj": {}
   },
   "projects": {
-    "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\TP_PII_Cine\\Programacion2\\Cine\\CineBack\\CineBack.csproj": {
+    "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\Banco_NicolasHerrera114188\\Cine\\CineBack\\CineBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\TP_PII_Cine\\Programacion2\\Cine\\CineBack\\CineBack.csproj",
+        "projectUniqueName": "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\Banco_NicolasHerrera114188\\Cine\\CineBack\\CineBack.csproj",
         "projectName": "CineBack",
-        "projectPath": "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\TP_PII_Cine\\Programacion2\\Cine\\CineBack\\CineBack.csproj",
+        "projectPath": "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\Banco_NicolasHerrera114188\\Cine\\CineBack\\CineBack.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\TP_PII_Cine\\Programacion2\\Cine\\CineBack\\obj\\",
+        "outputPath": "D:\\TUP\\TUP de programacion II\\Tup_ProgramII_2023\\Banco_NicolasHerrera114188\\Cine\\CineBack\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
