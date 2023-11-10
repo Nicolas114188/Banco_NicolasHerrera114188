@@ -110,9 +110,16 @@ namespace BancoApp1_3.Presentacion
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            int nro = int.Parse(dgvCliente.CurrentRow.Cells["ColCod_Cliente"].Value.ToString());
-            new FrmModificacionCliente(nro).ShowDialog();
-            this.btnConsultar_Click(null, null);
+            if(dgvCliente.CurrentRow != null)
+            {
+                int nro = int.Parse(dgvCliente.CurrentRow.Cells["ColCod_Cliente"].Value.ToString());
+                new FrmModificacionCliente(nro).ShowDialog();
+                this.btnConsultar_Click(null, null);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar cliente a modificar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -35,8 +35,21 @@ namespace BancoApp1_3.Presentacion
         {
             lblProximoCliente.Text = lblProximoCliente.Text + " " + oCliente.NroCliente.ToString();
             List<Parametro> lista = new List<Parametro>();
-            lista.Add(new Parametro("@cod_Cliente",oCliente.NroCliente));
+            lista.Add(new Parametro("@cod_Cliente", oCliente.NroCliente));
             DataTable dt = new ConexionDB().ConsultaSQL("CONSULTAR_CUENTA", lista);
+        }
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

@@ -114,7 +114,7 @@ CREATE PROC CONSULTAR_CUENTA
 @cod_Cliente int
 AS
 BEGIN
-SELECT cu.CBU,cu.ultimoMovimiento,cu.saldo,tp.nombre 'TipoCuenta'
+SELECT cu.CBU,cu.ultimoMovimiento,cu.saldo,tp.nombre 'TipoCuenta',cli.nombre,cli.apellido,cli.fecha_alta
 FROM Cuenta cu, Cliente cli, TipoCuenta tp
 WHERE cu.cod_TipoCuenta=tp.cod_TipoCuenta
 AND cu.cod_Cliente=cli.cod_Cliente
